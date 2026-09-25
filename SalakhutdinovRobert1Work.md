@@ -33,14 +33,6 @@ labex:~/ $ grep -oE '\b[A-Za-z_][A-Za-z0-9_]*\b' hello.cpp | sort -u
 labex:~/ $ ls -l banner
 labex:~/ $ cat > reg << 'EOF'
 #!/bin/bash
-if [[ $# -eq 0 ]]; then
-  echo "Usage: $0 <script>" >&2
-  exit 1
-fi
-if [[ ! -f $1 ]]; then
-  echo "File not found: $1" >&2
-  exit 1
-fi
 chmod +x "$1"
 cp "$1" /usr/local/bin/
 echo "Registered: $1 -> /usr/local/bin/$1"
