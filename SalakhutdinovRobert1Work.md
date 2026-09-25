@@ -65,9 +65,6 @@ EOF
 labex:project/ $ cat > check_comment << 'EOF'
 #!/bin/bash
 for file in *.c *.js *.py; do
-  [[ -e $file ]] || continue
-  first_line=$(head -n 1 "$file")
-
   case $file in
     *.c|*.js)
       if [[ $first_line =~ ^[[:space:]]*(//|/\*) ]]; then
