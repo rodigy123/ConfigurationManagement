@@ -1,1 +1,7 @@
-# ConfigurationManagement
+# Эмулятор Shell (Вариант 21)
+
+Консольный эмулятор командной строки UNIX-подобной ОС.
+
+## Запуск
+```bash
+python3 src/emulator.py
