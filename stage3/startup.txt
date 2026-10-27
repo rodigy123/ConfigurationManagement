@@ -1,0 +1,7 @@
+ls
+ls -la /tmp
+cd
+cd /home
+vfs-save ./saved_vfs
+badcommand
+exit
