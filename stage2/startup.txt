@@ -1,0 +1,7 @@
+ls
+ls -la /tmp
+cd $USERPROFILE
+cd
+cd a b
+foo bar
+exit
