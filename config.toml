@@ -1,0 +1,5 @@
+package_name = "nginx"
+repository_url = "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/"
+repository_mode = "remote"
+package_version = "1.24.0-r7"
+output_image = "graph.png"

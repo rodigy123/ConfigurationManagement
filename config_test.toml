@@ -1,0 +1,5 @@
+package_name = "A"
+repository_url = "test_repo.txt"
+repository_mode = "test"
+package_version = "1.0"
+output_image = "graph_test.png"

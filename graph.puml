@@ -1,0 +1,14 @@
+@startuml
+title Зависимости: nginx
+[nginx] --> [musl]
+[nginx] --> [libcrypto3]
+[nginx] --> [pcre]
+[nginx] --> [libssl3]
+[nginx] --> [zlib]
+[musl]
+[libcrypto3] --> [musl]
+[pcre] --> [musl]
+[libssl3] --> [musl]
+[libssl3] --> [libcrypto3]
+[zlib] --> [musl]
+@enduml
